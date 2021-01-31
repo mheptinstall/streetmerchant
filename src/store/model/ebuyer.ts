@@ -23,7 +23,7 @@ export const Ebuyer: Store = {
       model: 'test:model',
       series: 'test:series',
       url:
-        'https://www.ebuyer.com/874209-gigabyte-geforce-rtx-2060-windforce-6gb-oc-graphics-card-gv-n2060wf2oc-6gd-v2',
+        'https://www.ebuyer.com/393482-wd-blue-1tb-desktop-hard-drive-3-5-sata-iii-6gb-s-7200rpm-64mb-wd10ezex',
     },
     {
       brand: 'sony',
