@@ -21,6 +21,7 @@ import {AmdDe} from './amd-de';
 import {AmdIt} from './amd-it';
 import {AmdUk} from './amd-uk';
 import {AntOnline} from './antonline';
+import {AO} from './ao';
 import {Argos} from './argos';
 import {ArgosIE} from './argos-ie';
 import {Aria} from './aria';
@@ -158,6 +159,7 @@ export const storeList = new Map([
   [AmdIt.name, AmdIt],
   [AmdUk.name, AmdUk],
   [AntOnline.name, AntOnline],
+  [AO.name, AO],
   [Argos.name, Argos],
   [ArgosIE.name, Argos],
   [Aria.name, Aria],
