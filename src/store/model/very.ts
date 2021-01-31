@@ -15,7 +15,7 @@ export const Very: Store = {
     },
     outOfStock: {
       container: '.stockMessaging .indicator',
-      text: ['pre-order'],
+      text: ['pre-order', 'unavailable'],
     },
   },
   links: [
@@ -26,6 +26,44 @@ export const Very: Store = {
       url:
         'https://www.very.co.uk/msi-geforce-gtx-1660-ti-gaming-x-6g-graphics-card/1600350984.prd',
     },
+    {
+      brand: 'test:brand',
+      model: 'test:model',
+      series: 'test:series',
+      url:
+        'https://www.very.co.uk/playstation-5-mortal-kombat-11-ultimate/1600544541.prd',
+    },
+    {
+      brand: 'test:brand',
+      model: 'test:model',
+      series: 'test:series',
+      url:
+        'https://www.very.co.uk/playstation-5-call-of-duty-black-opsnbspcold-warnbsp/1600515317.prd',
+    },
+    {
+      brand: 'sony',
+      model: 'ps5 console',
+      series: 'sonyps5c',
+      url: 'https://www.very.co.uk/playstation-5-sign-up.page',
+      labels: {
+        outOfStock: {
+          container: 'img[data-src="https://content.very.co.uk/assets/static/2020/09/events/ps5-slices/ps5-stock-coming-soon/registerinterestpage-desktop.jpg"]',
+          text: ['']
+        }
+      }
+    },
+    {
+      brand: 'microsoft',
+      model: 'xbox series x',
+      series: 'xboxsx',
+      url: 'https://www.very.co.uk/xbox-series-x-sign-up.page',
+      labels: {
+        outOfStock: {
+          container: 'img[src="https://content.very.co.uk/assets/static/2020/09/events/22-xbox/out-of-stock/22-xbox-landing-page-OoS/desktop/01-xbox.jpg"]',
+          text: ['']
+        }
+      }
+    }
   ],
   linksBuilder: {
     builder: (docElement, series) => {
