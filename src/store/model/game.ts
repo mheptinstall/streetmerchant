@@ -22,7 +22,7 @@ export const Game: Store = {
       model: 'test:model',
       series: 'test:series',
       url:
-        'https://www.game.co.uk/en/ea-sports-fifa-21-500gb-ps4-bundle-2832947',
+        'https://www.game.co.uk/en/official-xbox-series-x-s-wireless-controller-carbon-black-2831424',
     },
     {
       brand: 'sony',
