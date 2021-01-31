@@ -12,8 +12,8 @@ export const SmythsToys: Store = {
       euroFormat: false,
     },
     outOfStock: {
-      container: '.instoreMessage',
-      text: ['out of stock'],
+      container: '#addToCartButton[disabled="disabled"]',
+      text: ['add to basket'],
     },
   },
   links: [
@@ -38,6 +38,12 @@ export const SmythsToys: Store = {
       url:
         'https://www.smythstoys.com/uk/en-gb/video-games-and-tablets/playstation-5/playstation-5-consoles/playstation-5-digital-edition-console/p/191430',
     },
+    {
+      brand: 'microsoft',
+      model: 'xbox series x',
+      series: 'xboxsx',
+      url: 'https://www.smythstoys.com/uk/en-gb/video-games-and-tablets/xbox-gaming/xbox-series-x-%7c-s/xbox-series-x-%7c-s-consoles/xbox-series-x-1tb-console/p/192012',
+    }
   ],
   name: 'smythstoys',
 };
