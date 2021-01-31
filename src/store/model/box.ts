@@ -24,7 +24,7 @@ export const Box: Store = {
       model: 'test:model',
       series: 'test:series',
       url:
-        'https://www.box.co.uk/Gigabyte-GeForce-RTX-2080-Super-8GB-Wind_2724554.html',
+        'https://www.box.co.uk/ST2000DM008-Seagate-2TB-BarraCuda-Desktop-Hard-Drive_2250583.html',
     },
     {
       brand: 'sony',
