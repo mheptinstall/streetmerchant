@@ -23,7 +23,7 @@ export const Currys: Store = {
       model: 'test:model',
       series: 'test:series',
       url:
-        'https://www.currys.co.uk/gbuk/computing-accessories/components-upgrades/graphics-cards/msi-geforce-rtx-2060-8-gb-super-ventus-gp-oc-graphics-card-10196803-pdt.html',
+        'https://www.currys.co.uk/gbuk/gaming/console-gaming/controllers/xbox-wireless-controller-carbon-black-10211565-pdt.html',
     },
     {
       brand: 'amd',
