@@ -4,7 +4,7 @@ export const SmythsToys: Store = {
   currency: '£',
   labels: {
     inStock: {
-      container: '#addToCartButton',
+      container: '.AddToCart-AddToCartAction #addToCartButton',
       text: ['add to basket'],
     },
     maxPrice: {
@@ -12,7 +12,7 @@ export const SmythsToys: Store = {
       euroFormat: false,
     },
     outOfStock: {
-      container: '#addToCartButton[disabled="disabled"]',
+      container: '.AddToCart-AddToCartAction #addToCartButton[disabled="disabled"]',
       text: ['add to basket'],
     },
   },
