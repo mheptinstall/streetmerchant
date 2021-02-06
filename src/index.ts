@@ -50,10 +50,7 @@ async function main() {
   await stop();
   browser = await puppeteer.launch({
     args,
-    defaultViewport: {
-      height: config.page.height,
-      width: config.page.width,
-    },
+    defaultViewport: null,
     headless: config.browser.isHeadless,
   });
 
