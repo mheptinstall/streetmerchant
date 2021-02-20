@@ -82,36 +82,6 @@ export const Currys: Store = {
         'https://www.currys.co.uk/gbuk/gaming/console-gaming/consoles/microsoft-xbox-series-s-512-gb-ssd-10205195-pdt.html',
     },
   ],
-  linksBuilder: {
-    builder: getProductLinksBuilder({
-      productsSelector: '.resultList .product',
-      sitePrefix: 'https://www.currys.co.uk',
-      titleSelector: '.productTitle',
-      urlSelector: 'a[href]',
-    }),
-    urls: [
-      {
-        series: '3060ti',
-        url:
-          'https://www.currys.co.uk/gbuk/rtx-3060-ti/components-upgrades/graphics-cards/324_3091_30343_xx_ba00013562-bv00313952/xx-criteria.html',
-      },
-      {
-        series: '3070',
-        url:
-          'https://www.currys.co.uk/gbuk/rtx-3070/components-upgrades/graphics-cards/324_3091_30343_xx_ba00013562-bv00313849/xx-criteria.html',
-      },
-      {
-        series: '3080',
-        url:
-          'https://www.currys.co.uk/gbuk/rtx-3080/components-upgrades/graphics-cards/324_3091_30343_xx_ba00013562-bv00313767/xx-criteria.html',
-      },
-      {
-        series: '3090',
-        url:
-          'https://www.currys.co.uk/gbuk/rtx-3090/components-upgrades/graphics-cards/324_3091_30343_xx_ba00013562-bv00313725/xx-criteria.html',
-      },
-    ],
-  },
   name: 'currys',
   waitUntil: 'domcontentloaded',
 };

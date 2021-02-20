@@ -18,6 +18,7 @@ import {SimplyGames} from './simplygames';
 import {ShopTo} from './shopto';
 import {SmythsToys} from './smythstoys';
 import {Store} from './store';
+import {Studio} from './studio';
 import {Very} from './very';
 import {logger} from '../../logger';
 
@@ -40,6 +41,7 @@ export const storeList = new Map([
   [SimplyGames.name, SimplyGames],
   [ShopTo.name, ShopTo],
   [SmythsToys.name, SmythsToys],
+  [Studio.name, Studio],
   [Very.name, Very],
 ]);
 
