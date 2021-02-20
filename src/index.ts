@@ -61,7 +61,6 @@ async function main() {
   await stop();
   browser = await launch({
     args,
-    defaultViewport: null,
     headless: config.browser.isHeadless,
   });
 
