@@ -3,9 +3,13 @@ import {Store} from './store';
 export const SmythsToys: Store = {
   currency: '£',
   labels: {
+    captcha: {
+      container: '#main-iframe',
+      text: [''],
+    },
     inStock: {
       container: '.AddToCart-AddToCartAction #addToCartButton',
-      text: ['add to basket'],
+      text: [''],
     },
     maxPrice: {
       container: '.price_tag',
@@ -13,36 +17,44 @@ export const SmythsToys: Store = {
     },
     outOfStock: {
       container: '.AddToCart-AddToCartAction #addToCartButton[disabled="disabled"]',
-      text: ['add to basket'],
+      text: [''],
     },
   },
   links: [
+    {
+      
+      brand: 'test:brand',
+      model: 'test:model',
+      series: 'test:series',
+      url:
+        'https://www.smythstoys.com/uk/en-gb/p/191951',
+    },
     {
       brand: 'test:brand',
       model: 'test:model',
       series: 'test:series',
       url:
-        'https://www.smythstoys.com/uk/en-gb/video-games-and-tablets/video-games/call-of-duty-video-games/call-of-duty-black-ops-cold-war/call-of-duty-black-ops-cold-war-ps5/p/191951',
+        'https://www.smythstoys.com/uk/en-gb/p/197072',
     },
     {
       brand: 'sony',
       model: 'ps5 console',
       series: 'sonyps5c',
       url:
-        'https://www.smythstoys.com/uk/en-gb/video-games-and-tablets/playstation-5/playstation-5-consoles/playstation-5-console/p/191259',
+        'https://www.smythstoys.com/uk/en-gb/p/191259',
     },
     {
       brand: 'sony',
       model: 'ps5 digital',
       series: 'sonyps5de',
       url:
-        'https://www.smythstoys.com/uk/en-gb/video-games-and-tablets/playstation-5/playstation-5-consoles/playstation-5-digital-edition-console/p/191430',
+        'https://www.smythstoys.com/uk/en-gb/p/191430',
     },
     {
       brand: 'microsoft',
       model: 'xbox series x',
       series: 'xboxsx',
-      url: 'https://www.smythstoys.com/uk/en-gb/video-games-and-tablets/xbox-gaming/xbox-series-x-%7c-s/xbox-series-x-%7c-s-consoles/xbox-series-x-1tb-console/p/192012',
+      url: 'https://www.smythstoys.com/uk/en-gb/p/192012',
     }
   ],
   name: 'smythstoys',
