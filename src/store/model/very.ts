@@ -44,84 +44,14 @@ export const Very: Store = {
       brand: 'sony',
       model: 'ps5 console',
       series: 'sonyps5c',
-      url: 'https://www.very.co.uk/playstation-5-disc-console-with-optional-extras/1600568976.prd?Ntt=playstation%205%20console',
+         url: 'https://www.very.co.uk/playstation-5-disc-console-with-optional-extras/1600568976.prd',
     },
     {
       brand: 'microsoft',
       model: 'xbox series x',
       series: 'xboxsx',
-      url: 'https://www.very.co.uk/xbox-series-x-sign-up.page',
-      labels: {
-        outOfStock: {
-          container: 'img[src="https://content.very.co.uk/assets/static/2020/09/events/22-xbox/out-of-stock/22-xbox-landing-page-OoS/desktop/01-xbox.jpg"]',
-          text: ['']
-        }
-      }
+      url: 'https://www.very.co.uk/xbox-series-x-xbox-series-x-withnbspoptional-extras/1600503631.prd',
     }
   ],
-  linksBuilder: {
-    builder: (docElement, series) => {
-      const productElements = docElement.find('.productList .product');
-      const links: Link[] = [];
-      for (let i = 0; i < productElements.length; i++) {
-        const productElement = productElements.eq(i);
-        const titleElement = productElement.find('.productTitle').first();
-        const title = titleElement.text()?.replace(/\n/g, ' ').trim();
-
-        if (
-          !title ||
-          ['RTX', series]
-            .map(x => title.toLowerCase().includes(x.toLowerCase()))
-            .filter(x => !x).length > 0
-        ) {
-          continue;
-        }
-
-        const url = titleElement.attr()?.href;
-
-        if (!url) {
-          continue;
-        }
-
-        const card = parseCard(title);
-
-        if (card) {
-          links.push({
-            brand: card.brand as any,
-            model: card.model,
-            series,
-            url,
-          });
-        } else {
-          logger.error(`Failed to parse card: ${title}`, {url});
-        }
-      }
-
-      return links;
-    },
-    ttl: 300000,
-    urls: [
-      {
-        series: '3060ti',
-        url:
-          'https://www.very.co.uk/electricals/pc-components/graphics-cards/e/b/118786.end?sort=newin,0&numProducts=100',
-      },
-      {
-        series: '3070',
-        url:
-          'https://www.very.co.uk/electricals/pc-components/graphics-cards/e/b/118786.end?sort=newin,0&numProducts=100',
-      },
-      {
-        series: '3080',
-        url:
-          'https://www.very.co.uk/electricals/pc-components/graphics-cards/e/b/118786.end?sort=newin,0&numProducts=100',
-      },
-      {
-        series: '3090',
-        url:
-          'https://www.very.co.uk/electricals/pc-components/graphics-cards/e/b/118786.end?sort=newin,0&numProducts=100',
-      },
-    ],
-  },
   name: 'very',
 };
