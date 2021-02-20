@@ -28,7 +28,13 @@ export const AO: Store = {
             model: 'ps5 console',
             series: 'sonyps5c',
             url: 'https://ao.com/product/p5hehwsny39500-sony-playstation-playstation-5-console-white-79528-291.aspx'
-        }
+        },
+        {
+            brand: 'microsoft',
+            model: 'xbox series x',
+            series: 'xboxsx',
+            url: 'https://ao.com/product/rrt00007aokts1-xbox-series-x-console-black-79623-291.aspx'
+        },
     ],
     name: 'ao',
     waitUntil: 'domcontentloaded'
