@@ -44,13 +44,7 @@ export const Very: Store = {
       brand: 'sony',
       model: 'ps5 console',
       series: 'sonyps5c',
-      url: 'https://www.very.co.uk/playstation-5-sign-up.page',
-      labels: {
-        outOfStock: {
-          container: 'img[data-src="https://content.very.co.uk/assets/static/2020/09/events/ps5-slices/ps5-stock-coming-soon/registerinterestpage-desktop.jpg"]',
-          text: ['']
-        }
-      }
+      url: 'https://www.very.co.uk/playstation-5-disc-console-with-optional-extras/1600568976.prd?Ntt=playstation%205%20console',
     },
     {
       brand: 'microsoft',
